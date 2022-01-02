@@ -53,7 +53,7 @@ struct CalculatorBrain {
         case 24.9...:
             return "You need to watch it!"
         default:
-            return "Default"
+            return "No advice"
         }
     }
     
