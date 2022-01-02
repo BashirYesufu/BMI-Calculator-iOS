@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ResultViewController.swift
 //  BMI Calculator
 //
 //  Created by mac on 1/2/22.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

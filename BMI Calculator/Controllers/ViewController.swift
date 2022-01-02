@@ -34,7 +34,6 @@ class ViewController: UIViewController {
         
         let bmi = weight / pow(height, 2) // this is same as height * height
         
-        print(bmi)
     }
 }
 
