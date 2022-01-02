@@ -15,7 +15,7 @@ struct CalculatorBrain {
     
     mutating func calculateBMI(height: Float, weight: Float) {
         let bmiValue = weight / pow(height, 2)
-        bmi = BMI(value: bmiValue, advice: "here is advice", color: switchColors(value: bmiValue))
+        bmi = BMI(value: bmiValue, advice: switchAdvice(value: bmiValue), color: switchColors(value: bmiValue))
     }
     
     func getBMIValue() -> String {
@@ -43,4 +43,21 @@ struct CalculatorBrain {
         }
     }
     
+    func switchAdvice(value: Float) -> String {
+        switch value {
+        case ...18.4:
+            return "Eat more pies!"
+        case 18.5...24.8:
+            return "You are doing well"
+        case 24.9...:
+            return "You need to watch it"
+        default:
+            return "Default"
+        }
+    }
+    
+    func setAdvice() -> String {
+        guard let bmiAdvice = bmi?.advice else { return "" }
+        return bmiAdvice
+    }
 }
