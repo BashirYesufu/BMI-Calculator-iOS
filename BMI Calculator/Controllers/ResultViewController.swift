@@ -11,11 +11,13 @@ import UIKit
 class ResultViewController: UIViewController {
 
     var bmiValue = "0.0"
+    var bmiColor: UIColor?
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = bmiColor
         bmiLabel.text = bmiValue
     }
     
